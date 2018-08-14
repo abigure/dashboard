@@ -6,7 +6,8 @@
 </div>
 <!-- /.row -->
 <div class="row">
-  <app-summary></app-summary>
+
+  <app-summary *ngFor="let sum_datum of sum_data_srv.data_dashboard;" [sum_datum]="sum_datum"></app-summary>
 </div>
 <!-- /.row -->
 <div class="row">

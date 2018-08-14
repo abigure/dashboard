@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { DataDashboardService } from '../../data-dashboard.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(public sum_data_srv: DataDashboardService) { }
 
   ngOnInit() {
   }
